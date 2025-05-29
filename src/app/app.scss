@@ -1,0 +1,21 @@
+:host.web {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .layout-section {
+    max-width: 900px;
+    width: 100%;
+  }
+}
+
+:host.tablet {
+  .layout-section {
+    padding: 15px;
+  }
+}
+
+:host.mobile {
+  .layout-section {
+    padding: 10px;
+  }
+}
