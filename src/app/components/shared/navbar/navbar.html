@@ -1,0 +1,38 @@
+<nav class="navbar-container">
+  <h1 class="heading">Portfolio</h1>
+  <!-- Web -->
+  @if (deviceType().web) {
+  <ul class="menu-list">
+    @for (item of navLinks; track $index) {
+    <li
+      class="menu-item"
+      [class.active]="item == activeSection()"
+      (click)="toggleNav(item)"
+    >
+      {{ item }}
+    </li>
+    }
+  </ul>
+  }
+  <!-- Mobile & Tablet View -->
+  @else if(isSideNav) {
+  <div class="backdrop"></div>
+  <ul class="menu-list">
+    <div>
+      <h1>Portfolio</h1>
+      <i class="fa-solid fa-xmark icon" (click)="isSideNav = !isSideNav"></i>
+    </div>
+    @for (item of navLinks; track $index) {
+    <li
+      class="menu-item"
+      [class.active]="item == activeSection()"
+      (click)="toggleNav(item)"
+    >
+      {{ item }}
+    </li>
+    }
+  </ul>
+  }@else {
+  <i class="fa-solid fa-bars icon" (click)="isSideNav = !isSideNav"></i>
+  }
+</nav>
