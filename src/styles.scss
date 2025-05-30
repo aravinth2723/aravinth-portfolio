@@ -1,17 +1,4 @@
-:root {
-  --background: #0f0f0f;
-  --primary-accent: #1f1f1f; // Background : Card - section
-  --secondary-accent: #2c2c2c; // Sections : Navbar - footer - secondary
-
-  --text-primary: #ffffff; // Main body text (white)
-  --text-muted: #b0b0b0; // Paragraphs - hints - metadata
-
-  --highlight-color: #00adb5; // Links - buttons - interactive elements
-  --button-hover: #019ca3;
-
-  --border: #3a3a3a; // Subtle separators - outlines
-  --error: #ff5722;
-}
+@use "styles/common.scss";
 
 body {
   background-color: var(--background);
