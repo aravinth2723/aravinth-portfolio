@@ -20,7 +20,10 @@
   <ul class="menu-list">
     <div>
       <h1>Portfolio</h1>
-      <i class="fa-solid fa-xmark icon" (click)="isSideNav = !isSideNav"></i>
+      <i
+        class="fa-solid fa-xmark icon-btn"
+        (click)="isSideNav = !isSideNav"
+      ></i>
     </div>
     @for (item of navLinks; track $index) {
     <li
@@ -33,6 +36,6 @@
     }
   </ul>
   }@else {
-  <i class="fa-solid fa-bars icon" (click)="isSideNav = !isSideNav"></i>
+  <i class="fa-solid fa-bars icon-btn" (click)="isSideNav = !isSideNav"></i>
   }
 </nav>
