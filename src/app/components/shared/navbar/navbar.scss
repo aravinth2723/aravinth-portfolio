@@ -11,6 +11,14 @@
       margin: 0;
       border: none;
     }
+    .menu-list {
+      .menu-item {
+        &:hover {
+          color: var(--text-primary);
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
