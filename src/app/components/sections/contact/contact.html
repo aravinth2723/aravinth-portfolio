@@ -1,0 +1,24 @@
+<section class="container">
+  @if (deviceType().mobile) {
+  <h1 class="heading">Contact</h1>
+  }@else {
+  <img src="images/contact.png" alt="Contact" height="250" />
+  }
+  <div class="content">
+    <p>
+      I'm always open to discussing new opportunities, exciting projects, or
+      just having a chat about tech, design, or anything creative. Whether you
+      have a question, a proposal, or just want to say hello, feel free to reach
+      out!
+    </p>
+    <div class="contact">
+      @for (item of contactList; track $index) {
+      <div>
+        <i [class]="`${item.icon} icon`"></i>
+        <p>{{ item.title }} :</p>
+        <a [href]="item.link" target="_blank">{{ item.content }}</a>
+      </div>
+      }
+    </div>
+  </div>
+</section>

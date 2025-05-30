@@ -13,10 +13,11 @@ import { Navbar } from './components/shared/navbar/navbar';
 import { Hero } from './components/sections/hero/hero';
 import { About } from './components/sections/about/about';
 import { Education } from './components/sections/education/education';
+import { Contact } from './components/sections/contact/contact';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, About, Education],
+  imports: [Navbar, Hero, About, Contact, Education],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

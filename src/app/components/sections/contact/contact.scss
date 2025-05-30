@@ -1,0 +1,59 @@
+:host {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .icon {
+        color: var(--text-muted);
+        font-size: 24px;
+      }
+      a {
+        text-decoration: none;
+        color: var(--highlight-color);
+        font-weight: 500;
+        transition: color 0.3s ease;
+        &:hover {
+          color: var(--button-hover);
+        }
+      }
+    }
+  }
+}
+
+:host-context(.web),
+:host-context(.tablet) {
+  :host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    .container {
+      max-width: 800px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+:host-context(.tablet) {
+  :host {
+    .container {
+      padding: 15px;
+    }
+  }
+}
+
+:host-context(.mobile) {
+  :host {
+    .container {
+      padding: 10px;
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
