@@ -12,10 +12,11 @@ import { DeviceType } from './interfaces/device-type';
 import { Navbar } from './components/shared/navbar/navbar';
 import { Hero } from './components/sections/hero/hero';
 import { About } from './components/sections/about/about';
+import { Education } from './components/sections/education/education';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, About],
+  imports: [Navbar, Hero, About, Education],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

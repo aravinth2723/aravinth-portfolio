@@ -1,0 +1,18 @@
+<section class="container">
+  <h1 class="heading">Education</h1>
+  <div class="timeline">
+    @for (edu of education; track $index) {
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h3>{{ edu.title }}</h3>
+          <p class="timeline-date">{{ edu.year }}</p>
+        </div>
+        <p>{{ edu.name }} - {{ edu.marks }}</p>
+        <p>{{ edu.place }}</p>
+      </div>
+    </div>
+    }
+  </div>
+</section>
