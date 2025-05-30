@@ -1,0 +1,80 @@
+:host {
+  .container {
+    .about-content {
+      margin-bottom: 30px;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+    .technical-skils {
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        .card {
+          background-color: var(--primary-accent);
+          border-radius: 8px;
+          border: 1px solid var(--border);
+          padding: 1rem;
+          width: fit-content;
+          h4 {
+            color: var(--text-primary);
+          }
+          ul {
+            padding: 10px 15px;
+            li {
+              list-style-type: none;
+              color: var(--text-muted);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:host-context(.web) {
+  :host {
+    display: flex;
+    justify-content: center;
+    .container {
+      max-width: 900px;
+    }
+    .card-container {
+      padding: 1rem;
+    }
+  }
+}
+
+:host-context(.tablet) {
+  :host {
+    .container {
+      padding: 15px;
+      .heading {
+        margin-bottom: 1rem !important;
+      }
+      .card-container {
+        .card {
+          width: 48% !important;
+        }
+      }
+    }
+  }
+}
+
+:host-context(.mobile) {
+  :host {
+    .container {
+      padding: 10px;
+      .heading {
+        margin-bottom: 1rem !important;
+      }
+      .card-container {
+        gap: 0.5rem !important;
+        .card {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

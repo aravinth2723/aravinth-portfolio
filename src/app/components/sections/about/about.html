@@ -1,0 +1,39 @@
+<section class="container">
+  <section class="about-content">
+    <h1 class="heading">About Me</h1>
+    <p>
+      Hi, I'm <span class="highlight">Aravinth</span>, a passionate and
+      dedicated frontend developer with a strong focus on
+      <span class="highlight">Angular 13+</span>. As a fresher, I bring fresh
+      energy, a strong foundation in web development, and a keen interest in
+      building dynamic, responsive, and user-friendly applications.
+    </p>
+    <p>
+      I'm constantly learning and evolving, with a deep enthusiasm for creating
+      seamless user experiences using the latest web technologies. Angular's
+      component-based architecture, efficient data binding, and robust ecosystem
+      have become my strongest tools for crafting modern web solutions.
+    </p>
+    <p>
+      I'm excited to contribute to innovative projects, grow as a developer, and
+      collaborate with teams that value clean code, performance, and great
+      design.
+    </p>
+  </section>
+
+  <section class="technical-skils">
+    <h1 class="heading">Technical Skils</h1>
+    <section class="card-container">
+      @for (item of technicalSkils; track $index) {
+      <div class="card">
+        <h4>{{ item.title }}</h4>
+        <ul>
+          @for (skill of item.skills; track $index) {
+          <li>{{ skill }}</li>
+          }
+        </ul>
+      </div>
+      }
+    </section>
+  </section>
+</section>

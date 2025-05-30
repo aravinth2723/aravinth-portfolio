@@ -11,10 +11,11 @@ import { Responsive } from './services/responsive';
 import { DeviceType } from './interfaces/device-type';
 import { Navbar } from './components/shared/navbar/navbar';
 import { Hero } from './components/sections/hero/hero';
+import { About } from './components/sections/about/about';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero],
+  imports: [Navbar, Hero, About],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
