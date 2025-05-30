@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .hero-content {
+    max-width: 700px;
+    h1 {
+      font-size: clamp(1.25rem, 3vw, 2.5rem);
+    }
+    h2 {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+    .highlight {
+      color: var(--highlight-color);
+    }
+    .primary-btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+:host-context(.tablet) {
+  :host {
+    padding: 15px;
+    .hero-content {
+      h2 {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+:host-context(.mobile) {
+  :host {
+    .hero-content {
+      padding: 15px;
+      h2 {
+        margin-bottom: 10px;
+      }
+      .primary-btn {
+        margin-top: 10px;
+      }
+    }
+  }
+}

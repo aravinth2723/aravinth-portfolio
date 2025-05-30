@@ -10,10 +10,11 @@ import { Subject, takeUntil } from 'rxjs';
 import { Responsive } from './services/responsive';
 import { DeviceType } from './interfaces/device-type';
 import { Navbar } from './components/shared/navbar/navbar';
+import { Hero } from './components/sections/hero/hero';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar],
+  imports: [Navbar, Hero],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
