@@ -14,10 +14,11 @@ import { Hero } from './components/sections/hero/hero';
 import { About } from './components/sections/about/about';
 import { Education } from './components/sections/education/education';
 import { Contact } from './components/sections/contact/contact';
+import { Footer } from './components/shared/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Hero, About, Contact, Education],
+  imports: [Navbar, Hero, About, Contact, Education, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
