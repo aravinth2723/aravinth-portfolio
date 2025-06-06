@@ -6,6 +6,10 @@
     using modern technologies like Angular, HTML, CSS, and JavaScript.
   </p>
   <button type="button" class="primary-btn" (click)="openPDF()">Resume</button>
+  <i
+    class="fa-solid fa-arrow-down icon-btn"
+    (click)="downArrowBtn('about')"
+  ></i>
 </div>
 
 @if (!deviceType().mobile) {

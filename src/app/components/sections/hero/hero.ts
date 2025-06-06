@@ -14,4 +14,8 @@ export class Hero {
     const pdfUrl = './assets/docs/simple-professional-resume.pdf';
     window.open(pdfUrl, '_blank');
   }
+
+  downArrowBtn(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
