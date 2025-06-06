@@ -9,4 +9,9 @@ import { DeviceType } from '../../../interfaces/device-type';
 })
 export class Hero {
   @Input() deviceType!: Signal<DeviceType>;
+
+  openPDF() {
+    const pdfUrl = './assets/docs/simple-professional-resume.pdf';
+    window.open(pdfUrl, '_blank');
+  }
 }
