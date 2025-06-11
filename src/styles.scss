@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background: #0f0f0f;
+  --primary-accent: #1f1f1f; // Background : Card - section
+  --secondary-accent: #2c2c2c; // Sections : Navbar - footer - secondary
+
+  --text-primary: #ffffff; // Main body text (white)
+  --text-muted: #b0b0b0; // Paragraphs - hints - metadata
+
+  --highlight-color: #00adb5; // Links - buttons - interactive elements
+  --button-hover: #019ca3;
+
+  --border: #3a3a3a; // Subtle separators - outlines
+  --error: #ff5722;
+}
+
+body {
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  color: var(--text-primary);
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
