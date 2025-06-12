@@ -1,0 +1,21 @@
+@if (!deviceType().web) {
+<section class="side-menu">
+  <h1 class="heading">Portfolio</h1>
+  <fa-icon
+    [icon]="closeIcon"
+    (click)="toggleNav('out')"
+    class="icon-btn"
+  ></fa-icon>
+</section>
+}
+<ul class="menu-list">
+  @for (item of navLinks; track $index) {
+  <li
+    class="menu-item"
+    [class.active]="item == activeSection()"
+    (click)="toggleNav(item)"
+  >
+    {{ item }}
+  </li>
+  }
+</ul>

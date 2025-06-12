@@ -1,0 +1,24 @@
+<nav [@collapse]="isScroll()">
+  <h1 class="heading">Portfolio</h1>
+  @if (deviceType().web) {
+  <app-menu
+    [@slideInOut]="!deviceType().web && menuState"
+    (dataChanged)="toggleMenu($event)"
+    [deviceType]="deviceType"
+  ></app-menu>
+  }@else {
+  <fa-icon
+    [icon]="menuIcon"
+    (click)="toggleMenu(null)"
+    class="icon-btn"
+  ></fa-icon>
+  }
+</nav>
+
+@if (!deviceType().web) {
+<app-menu
+  [@slideInOut]="!deviceType().web && menuState"
+  (dataChanged)="toggleMenu($event)"
+  [deviceType]="deviceType"
+></app-menu>
+}

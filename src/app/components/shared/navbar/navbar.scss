@@ -1,0 +1,51 @@
+:host {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+  }
+}
+
+:host-context(.web) {
+  :host {
+    display: flex;
+    justify-content: center;
+    nav {
+      max-width: 1100px;
+      width: 100%;
+    }
+  }
+}
+
+:host-context(.tablet) {
+  :host {
+    nav {
+      padding: 12px 24px;
+    }
+  }
+}
+
+:host-context(.mobile) {
+  :host {
+    nav {
+      padding: 8px 16px;
+    }
+  }
+}
+
+:host.scrolled {
+  background-color: var(--secondary-accent);
+}
+:host.scrolling {
+  nav {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
